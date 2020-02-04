@@ -1,24 +1,82 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./css/reset.css";
+import "./App.css";
+import Header from "./components/Header";
+import Jobs from "./components/Jobs";
+import Footer from "./components/Footer";
+
+const data = [
+  {
+    className: "border-red",
+    title: "Full Time Sales Associate - Sydney Boutique",
+    contractType: "CDI",
+    country: "Australie",
+    city: "Sidney"
+  },
+  {
+    className: "border-green",
+    title: "Full Time Sales Associate - Sydney Boutique",
+    contractType: "CDI",
+    country: "Australie",
+    city: "Sidney"
+  },
+  {
+    className: "border-yellow",
+    title: "Full Time Sales Associate - Sydney Boutique",
+    contractType: "CDI",
+    country: "Australie",
+    city: "Sidney"
+  },
+  {
+    className: "border-blue",
+    title: "Full Time Sales Associate - Sydney Boutique",
+    contractType: "CDI",
+    country: "Australie",
+    city: "Sidney"
+  },
+  {
+    className: "border-pink",
+    title: "Full Time Sales Associate - Sydney Boutique",
+    contractType: "CDI",
+    country: "Australie",
+    city: "Sidney"
+  },
+  {
+    className: "border-red",
+    title: "Full Time Sales Associate - Sydney Boutique",
+    contractType: "CDI",
+    country: "Australie",
+    city: "Sidney"
+  },
+  {
+    className: "border-green",
+    title: "Full Time Sales Associate - Sydney Boutique",
+    contractType: "CDI",
+    country: "Australie",
+    city: "Sidney"
+  },
+  {
+    className: "border-yellow",
+    title: "Full Time Sales Associate - Sydney Boutique",
+    contractType: "CDI",
+    country: "Australie",
+    city: "Sidney"
+  },
+  {
+    className: "border-blue",
+    title: "Full Time Sales Associate - Sydney Boutique",
+    contractType: "CDI",
+    country: "Australie",
+    city: "Sidney"
+  }
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header name="The Job Board"></Header>
+      <Jobs infos={data}></Jobs>
+      <Footer></Footer>
     </div>
   );
 }
